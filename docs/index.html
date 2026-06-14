@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAD Automation Tool - 零成本CAD自动化工具</title>
+    <title>CAD自动化工具 - 零成本批量处理DXF图纸 | cad-automation</title>
+    <meta name="description" content="CAD自动化工具 - 零成本批量处理DXF图纸，施工图转竣工图自动化。支持文字批量替换、图层管理、图块插入，无需AutoCAD许可证。">
+    <meta name="keywords" content="CAD自动化,DXF处理,施工图转竣工图,批量处理CAD,Python CAD工具,零成本CAD,开源CAD工具">
+    <meta name="author" content="1036007003-wq">
+    <meta property="og:title" content="CAD Automation Tool - 零成本CAD自动化工具">
+    <meta property="og:description" content="批量处理DXF图纸，施工图转竣工图自动化。500倍效率提升，零错误率。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://1036007003-wq.github.io/cad-automation/">
+    <link rel="canonical" href="https://1036007003-wq.github.io/cad-automation/">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { margin:0; padding:0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0a0e27; color: #e2e8f0; }
         .header { background: linear-gradient(135deg, #1a1f3a 0%, #2d3561 100%); padding: 80px 20px; text-align: center; }
         .header h1 { font-size: 3em; margin-bottom: 10px; background: linear-gradient(120deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
@@ -29,6 +37,10 @@
         .badge { display: inline-block; background: #2d3561; padding: 5px 15px; border-radius: 20px; margin: 5px; font-size: 0.9em; }
         .footer { background: #1a1f3a; padding: 40px 20px; text-align: center; color: #8892b0; }
         .highlight { color: #667eea; font-weight: bold; }
+        .seo-content { background: #1a1f3a; padding: 40px; border-radius: 12px; margin: 60px 0; }
+        .seo-content h2 { color: #667eea; margin-bottom: 20px; }
+        .seo-content p { color: #8892b0; line-height: 1.8; margin-bottom: 15px; }
+        .seo-content ul { color: #8892b0; line-height: 1.8; margin-left: 20px; }
     </style>
 </head>
 <body>
@@ -47,7 +59,7 @@
                 <p>批量处理每秒1张图纸，相比手动处理效率提升<span class="highlight">500倍</span></p>
             </div>
             <div class="feature-card">
-                <h3>💯 零成本</h3>
+                <h3>💰 零成本</h3>
                 <p>完全开源免费，不需要AutoCAD许可证，<span class="highlight">成本降低100%</span></p>
             </div>
             <div class="feature-card">
@@ -66,6 +78,19 @@
                 <h3>📂 批量处理</h3>
                 <p>支持整个文件夹一键处理，<span class="highlight">智能并行</span>加速</p>
             </div>
+        </div>
+
+        <div class="seo-content">
+            <h2>📚 CAD自动化完整指南</h2>
+            <p>CAD（Computer-Aided Design，计算机辅助设计）是建筑、工程、制造等行业的核心工具。然而，处理大量CAD图纸时，手动操作效率低下且容易出错。</p>
+            <p>本工具提供<strong>零成本的CAD自动化解决方案</strong>，特别适合以下场景：</p>
+            <ul>
+                <li><strong>施工图转竣工图</strong> - 批量替换文字、冻结图层、插入竣工章</li>
+                <li><strong>批量修改图纸编号</strong> - 支持正则表达式，灵活匹配</li>
+                <li><strong>标准化图层管理</strong> - 批量冻结/解冻图层，优化显示</li>
+                <li><strong>无AutoCAD环境处理</strong> - 纯Python实现，无需AutoCAD许可证</li>
+            </ul>
+            <p>无论您是建筑设计院、工程咨询公司，还是独立从业者，本工具都能显著提升您的CAD处理效率。</p>
         </div>
 
         <h2 style="font-size: 2em; margin: 60px 0 30px 0;">📊 效果对比</h2>
@@ -123,6 +148,18 @@ python cli.py batch-process ./施工图纸 ./竣工图纸 \<br>
 python cli.py batch-process ./input ./output \<br>
 &nbsp;&nbsp;--freeze-layers "临时标注" "辅助线"
             </code>
+        </div>
+
+        <div class="seo-content">
+            <h2>🛠️ 技术栈详解</h2>
+            <p>本工具采用<strong>纯Python技术栈</strong>，无需依赖AutoCAD或其他商业软件：</p>
+            <ul>
+                <li><strong>ezdxf</strong> - 纯Python DXF文件读写库，支持DXF R12至R2018版本</li>
+                <li><strong>Click</strong> - 优雅的命令行界面框架，提供直观的命令结构</li>
+                <li><strong>PyYAML</strong> - 配置文件支持，灵活定义处理规则</li>
+                <li><strong>Python 3.8+</strong> - 兼容macOS、Linux、Windows主流操作系统</li>
+            </ul>
+            <p>通过<strong>模块化设计</strong>，本工具支持功能扩展和定制开发。如果您有特殊需求，可以基于MIT许可证修改源代码。</p>
         </div>
 
         <h2 style="font-size: 2em; margin: 60px 0 30px 0;">✨ 功能特性</h2>
