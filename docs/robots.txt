@@ -1,0 +1,13 @@
+# robots.txt for cad-automation
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://1036007003-wq.github.io/cad-automation/sitemap.xml
+
+# Disallow admin pages (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Crawl-delay (be nice to crawlers)
+Crawl-delay: 1
